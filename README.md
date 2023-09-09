@@ -26,7 +26,7 @@
 Html, Css, Javascript
 
 ### Setup
-VS code , GitHub, Git, Vercelm Wireframe.
+VS code , GitHub, Git, Vercel, Wireframe.
 
 
 ## Authors
