@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <link rel="icon" href="./assets/img/bird.svg">
+ <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Habibi&family=Charm&family=Pacifico&family=Cinzel:wght@400;700&family=Cookie&family=Dancing+Script&family=Fjalla+One&family=Fondamento&family=Handlee&family=Indie+Flower&family=Italianno&family=Kalam:wght@300&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,400;1,400&family=Lobster+Two&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Marcellus+SC&family=Merienda+One&family=Open+Sans:wght@400;600&family=Pacifico&family=Petit+Formal+Script&family=Playfair+Display+SC&family=Poppins:wght@300&family=Redressed&family=Roboto:wght@100&family=Rouge+Script&family=Sacramento&family=Satisfy&family=Seaweed+Script&family=Slabo+27px&family=Spectral+SC:wght@300;400&family=Amita:wght@400;700&family=Arya:wght@400;700&family=Clicker+Script&family=Courgette&family=Elsie&family=Emilys+Candy&family=Felipa&family=Gotu&family=Grand+Hotel&family=Great+Vibes&family=Halant:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Niconne&family=Norican&family=Oleo+Script:wght@400;700&family=Oregano:ital@0;1&family=Playball&family=Quintessential&family=Ranga:wght@400;700&family=Rochester&family=Sevillana&family=Sofia&family=Tangerine:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Alegreya&family=Amethysta&family=Libre+Baskerville&family=Marck+Script&family=Spectral+SC:wght@700&family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./index.css">
+ <script src="./footer.js"></script>
+ <script src="./navbar.js"></script>
+ <title>Simple Wedding Video Invitations</title>
+</head>
+<body style="min-height: 100%;height: auto;">
+
+ <!-- Google Tag Manager (noscript) -->
+ <noscript>
+     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5PRNHS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+ </noscript>
+ <!-- End Google Tag Manager (noscript) -->
+ <custom-navbar></custom-navbar>
+ <div class="hero-section">
+     <div class="hero-bg">
+         <div class="content-section"> 
+             <h1 class="hero-section-title">
+                 <span class="mainHeading">
+                     Super easy to create Your <br>Video Invite
+                 </span>
+                 <span class="full-stop">.</span>
+             </h1>
+             <p class="hero-subtitle">
+                 You don't need any design experience, fully customizable <br>best digital video invite
+             </p>
+             <div class="button-container">
+                 <div class="text-us-button">
+                     <button onclick='window.open("http:/wa.me/918005993442?text=Hey! Need help","_blank")'>
+                         <i class="fa fa-whatsapp"></i>
+                         <p>
+                             <span class="text-us">Order on WhatsApp</span>
+                         </p>
+                     </button>
+                 </div>
+                 <a class="create-invitation-btn" onclick="openModal()">
+                     <span class="lets-create-btn-desktop">Let's Create It Online</span>
+                     <span class="lets-create-btn-mobile">Create It Online</span>
+                     <span class="material-symbols-outlined">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                             <path d="m480 896-42-43 247-247H160v-60h525L438 299l42-43 320 320-320 320Z"/>
+                         </svg>
+                 </a>
+             </div>
+             <div class="modal" id="loadingModal">
+                 <div class="modal-content">
+                     <div class="back-btn">
+                         <span class="material-symbols-outlined">
+                             <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.26368 0.357965L0.363592 8.1358C-0.121197 8.61308 -0.121197 9.38692 0.363592 9.8642L8.26368 17.642C8.74847 18.1193 9.53447 18.1193 10.0193 17.642C10.504 17.1647 10.504 16.3909 10.0193 15.9136L4.23833 10.2222L22.7586 10.2222C23.4442 10.2222 24 9.67498 24 9C24 8.32502 23.4442 7.77783 22.7586 7.77783L4.23833 7.77783L10.0193 2.08637C10.504 1.60909 10.504 0.835252 10.0193 0.357965C9.53447 -0.119322 8.74847 -0.119322 8.26368 0.357965Z" fill="#007663"/>
+                             </svg>
+                         </span>
+                     </div>
+                     <div class="loader">
+                         <lottie-player class="lottie-animation" src="/assets/animations/newScene.json" background="#FFFFFF" speed="1" style="width: 400px; height: 300px" direction="1" mode="normal" loop autoplay></lottie-player>
+                     </div>
+                 </div>
+             </div>
+             <div class="image-section">
+                 <div class="main-image-container">
+                     <div class="image-outer-container">
+                         <div class="image-container">
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m1.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m1%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m1.webp" alt="Designer Hindu e-invite featuring traditional art of an elephant and a wedding couple">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m2.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m2%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m2.webp" alt="Beautiful Bengali wedding card with a unique design and an illustration of a beautiful couple in front of a white fort">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m3.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m3%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m3.webp" alt="Digital e-card with a red and golden theme, featuring Lord Buddha and floral decorations">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m4.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m4%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m4.webp" alt="Digital marriage invitation with an elephant ready for the baraat, set in a forest">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m5.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m5%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m5.webp" alt="Designer Muslim invitation card with an illustration of a beautiful couple in traditional dresses, in front of a wooden window">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m6.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m6%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m6.webp" alt="E-invite featuring an illustration of a couple in traditional dress standing together in a temple dedicated to Lord Buddha">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m7.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m7%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m7.webp" alt="Online designer invitation with a Bengali couple illustration against a red and yellow background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m8.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m8%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m8.webp" alt="Online marriage invitation with a beautiful couple illustration and a pink and green background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m9.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m9%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m9.webp" alt="Wedding card with a unique design, featuring a couple in traditional wedding attire dancing in front of the Taj Mahal">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m10.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m10%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m10.webp" alt="Designer wedding card with a South Indian couple in traditional dress, moving together on a bridge">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m11.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m11%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m11.webp" alt="Designer Marathi e-invite with a Marathi couple in traditional dress, moving around a ceremonial fire">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m12.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m12%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m12.webp" alt="Nikah wedding card with an illustration of a couple sitting in front of each other, with a blue designer wall in the background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m13.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m13%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m13.webp" alt="Designer Nikah invite with an illustration of a couple wearing traditional dresses, standing in a royal fort together">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m14.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m14%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m14.webp" alt="Designer Hindu e-invite with a red and golden theme, featuring Lord Ganesha in the background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m15.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m15%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m15.webp" alt="Digital wedding invite with a standing couple on a pink and white background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m16.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m16%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m16.webp" alt="Designer Marathi e-invite with a standing couple illustration and elephants in the corners">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m17.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m17%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m17.webp" alt="Beautiful Sikh wedding invite with a Sikh couple sitting in a gurdwara">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m18.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m18%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m18.webp" alt="Digital Hindu wedding card with a golden and white background, featuring an illustration of Lord Ganesha">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m19.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m19%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m19.webp" alt="Designer Sikh e-invite with an illustration of a Sikh couple sitting together and floral decorations in the corners">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m20.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m20%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m20.webp" alt="Digital e-invite with a purple designer background and an illustration of a couple holding varmala in front of each other">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m21.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m21%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m21.webp" alt="Designer Marathi wedding invite with an illustration of a Marathi couple and a beautiful designer arch">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m22.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m22%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m22.webp" alt="South Indian e-invite with illustrations of South Indian temples in the background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m23.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m23%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m23.webp" alt="Christian e-invite with a couple in wedding dresses standing in front of a church gate">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m24.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m24%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m24.webp" alt="cards">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m1.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m1%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m1.webp" alt="Designer Hindu e-invite featuring traditional art of an elephant and a wedding couple">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m2.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m2%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m2.webp" alt="Beautiful Bengali wedding card with a unique design and an illustration of a beautiful couple in front of a white fort">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m3.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m3%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m3.webp" alt="Digital e-card with a red and golden theme, featuring Lord Buddha and floral decorations">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m4.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m4%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m4.webp" alt="Digital marriage invitation with an elephant ready for the baraat, set in a forest">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m5.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m5%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m5.webp" alt="Designer Muslim invitation card with an illustration of a beautiful couple in traditional dresses, in front of a wooden window">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m6.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m6%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m6.webp" alt="E-invite featuring an illustration of a couple in traditional dress standing together in a temple dedicated to Lord Buddha">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m7.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m7%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m7.webp" alt="Online designer invitation with a Bengali couple illustration against a red and yellow background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m8.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m8%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m8.webp" alt="Online marriage invitation with a beautiful couple illustration and a pink and green background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m9.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m9%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m9.webp" alt="Wedding card with a unique design, featuring a couple in traditional wedding attire dancing in front of the Taj Mahal">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m10.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m10%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m10.webp" alt="Designer wedding card with a South Indian couple in traditional dress, moving together on a bridge">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m11.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m11%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m11.webp" alt="Designer Marathi e-invite with a Marathi couple in traditional dress, moving around a ceremonial fire">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m12.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m12%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m12.webp" alt="Nikah wedding card with an illustration of a couple sitting in front of each other, with a blue designer wall in the background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m13.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m13%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m13.webp" alt="Designer Nikah invite with an illustration of a couple wearing traditional dresses, standing in a royal fort together">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m14.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m14%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m14.webp" alt="Designer Hindu e-invite with a red and golden theme, featuring Lord Ganesha in the background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m15.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m15%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m15.webp" alt="Digital wedding invite with a standing couple on a pink and white background">
+                             </picture>
+                             <picture>
+                                 <source media="(min-width: 768)" srcset="/assets/img/index/hero-section-images/m16.webp">
+                                 <source media="(max-width: 767)" srcset="/assets/img/index/hero-section-images/m16%20(1).webp">
+                                 <img src="/assets/img/index/hero-section-images/m16.webp" alt="Designer Marathi e-invite with a standing couple illustration and elephants in the corners">
+                             </picture>
+                         </div>
+                     </div>
+                     <div class="design-tips-container">
+                         <a class="video-invitation-btn" href="/video-invitation/#videos">
+                             <span class="lets-create-btn" style="color: white;">Explore all Video Invites</span>
+                             <span class="material-symbols-outlined">
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                                     <path d="m480 896-42-43 247-247H160v-60h525L438 299l42-43 320 320-320 320Z"/>
+                                 </svg>
+                             </span>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="invite-types-container">
+         <h2 class="invite-types-title diff-invite">
+             Reasons Why to choose <span style="color: #007663;">Celebrare</span>
+             ?
+         </h2>
+         <div class="container">
+             <div class="circle-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="100" viewBox="0 0 120 115" fill="none">
+                     <path d="M98.4244 28.5963L100.428 25.031L101.844 25.867C102.36 26.1744 102.936 26.3342 103.512 26.3342C103.8 26.3342 104.1 26.2973 104.388 26.2112C105.252 25.9777 105.973 25.3998 106.429 24.613L107.209 23.236C108.133 21.6009 107.581 19.4863 105.984 18.5397L100.284 15.1711C99.5045 14.7162 98.6044 14.5932 97.7404 14.8268C96.8764 15.0604 96.1564 15.6382 95.7004 16.4251L94.9204 17.802C93.9964 19.4371 94.5484 21.5517 96.1444 22.4984L97.9324 23.5557L95.9284 27.1087C89.8804 23.777 83.0283 21.7976 75.7443 21.5763V11.4951H79.5963C82.0323 11.4951 84.0123 9.46654 84.0123 6.97081V4.52427C84.0123 2.02854 82.0323 0 79.5963 0H69.3842C66.9482 0 64.9682 2.02854 64.9682 4.52427V6.9954C64.9682 9.49113 66.9482 11.5197 69.3842 11.5197H72.8763V21.6009C65.8082 21.8468 58.9682 23.777 52.8601 27.1333L50.6521 23.2238L52.4761 22.1419C54.0721 21.1952 54.6241 19.0929 53.7001 17.4455L52.9201 16.0685C52.4761 15.2694 51.7441 14.7039 50.8801 14.4703C50.0161 14.2367 49.1161 14.3596 48.3361 14.8145L42.6361 18.1831C41.04 19.1298 40.488 21.2321 41.412 22.8795L42.1921 24.2565C42.6361 25.0556 43.3681 25.6211 44.2321 25.8547C44.5201 25.9285 44.8201 25.9777 45.1081 25.9777C45.6841 25.9777 46.2601 25.8178 46.7761 25.5105L48.1681 24.6868L50.3761 28.5963C45.5041 31.6945 41.172 35.7393 37.692 40.5709H30.156C29.364 40.5709 28.716 41.2348 28.716 42.0462C28.716 42.8576 29.364 43.5215 30.156 43.5215H38.412C38.448 43.5215 38.484 43.5092 38.508 43.5092C38.568 43.5092 38.616 43.4969 38.676 43.4969C38.724 43.4846 38.76 43.4723 38.808 43.46C38.856 43.4477 38.892 43.4354 38.94 43.4231C38.988 43.4108 39.024 43.3863 39.072 43.3617C39.108 43.3371 39.156 43.3248 39.192 43.2879C39.228 43.2633 39.264 43.2264 39.3 43.2018C39.336 43.1773 39.372 43.1404 39.408 43.1158C39.444 43.0789 39.48 43.0297 39.516 42.9928C39.54 42.9683 39.564 42.9437 39.576 42.9191C47.6041 31.3748 60.6122 24.5024 74.4003 24.5024C97.9564 24.5024 117.133 44.1362 117.133 68.282C117.133 92.4278 97.9564 112.049 74.4003 112.049C59.2202 112.049 45.0601 103.689 37.428 90.2272C37.416 90.2149 37.404 90.2026 37.404 90.1903C37.38 90.1411 37.344 90.1042 37.308 90.0674C37.284 90.0305 37.248 89.9936 37.224 89.9567C37.188 89.9198 37.152 89.8952 37.116 89.8584C37.08 89.8215 37.044 89.7969 37.008 89.7723C36.972 89.7477 36.936 89.7231 36.888 89.6985C36.852 89.6739 36.804 89.6494 36.768 89.6371C36.72 89.6125 36.684 89.6002 36.636 89.5879C36.588 89.5756 36.552 89.551 36.504 89.551C36.456 89.5387 36.42 89.5387 36.372 89.5264C36.324 89.5141 36.264 89.5141 36.216 89.5141C36.204 89.5141 36.192 89.5141 36.168 89.5141H27.2759C26.4839 89.5141 25.8359 90.178 25.8359 90.9894C25.8359 91.8008 26.4839 92.4647 27.2759 92.4647H35.364C43.6081 106.369 58.4882 115 74.4003 115C99.5405 115 120.001 94.0384 120.001 68.282C120.001 51.5496 111.373 36.8457 98.4244 28.5963ZM97.4164 19.2773L98.1964 17.9004C98.2804 17.7528 98.4124 17.6914 98.4844 17.6668C98.5204 17.6545 98.5564 17.6545 98.6044 17.6545C98.6764 17.6545 98.7605 17.6668 98.8445 17.716L104.544 21.0846C104.772 21.2198 104.856 21.5272 104.724 21.7607L103.944 23.1377C103.86 23.2852 103.728 23.3467 103.656 23.3713C103.584 23.3959 103.44 23.4082 103.296 23.3221L97.5964 19.9535C97.3684 19.8183 97.2844 19.5109 97.4164 19.2773ZM67.8602 6.9954V4.52427C67.8602 3.65138 68.5562 2.95061 69.3962 2.95061H79.6083C80.4603 2.95061 81.1443 3.66367 81.1443 4.52427V6.9954C81.1443 7.86829 80.4483 8.56906 79.6083 8.56906H69.3962C68.5442 8.56906 67.8602 7.856 67.8602 6.9954ZM45.3481 22.9533C45.2041 23.0393 45.0601 23.0271 44.9881 23.0025C44.9161 22.9779 44.7841 22.9287 44.7001 22.7689L43.9201 21.3919C43.7881 21.1583 43.8721 20.851 44.1001 20.7157L49.8001 17.3471C49.9441 17.2611 50.0881 17.2734 50.1601 17.2979C50.2321 17.3225 50.3641 17.3717 50.4481 17.5315L51.2281 18.9085C51.3601 19.1421 51.2761 19.4494 51.0481 19.5847L45.3481 22.9533Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M34.0684 68.2823C34.0684 68.3929 34.0804 68.4913 34.1044 68.5896C34.2724 91.1126 52.1165 109.394 74.1006 109.566C74.1966 109.591 74.3046 109.603 74.4006 109.603C74.5086 109.603 74.6046 109.591 74.7006 109.566C96.6848 109.394 114.529 91.1126 114.697 68.5896C114.721 68.4913 114.733 68.3806 114.733 68.2823C114.733 68.1716 114.721 68.0733 114.697 67.9749C114.541 45.4519 96.6848 27.1581 74.7126 26.9983C74.6166 26.9737 74.5086 26.9614 74.4126 26.9614C74.3046 26.9614 74.2086 26.9737 74.1126 26.9983C52.1165 27.1581 34.2724 45.4519 34.1044 67.9749C34.0804 68.0733 34.0684 68.1716 34.0684 68.2823ZM72.9726 29.9612V35.7641C72.9726 36.5755 73.6206 37.2394 74.4126 37.2394C75.2046 37.2394 75.8526 36.5755 75.8526 35.7641V29.9612C95.3528 30.7235 111.073 46.8289 111.817 66.8069H106.153C105.361 66.8069 104.713 67.4708 104.713 68.2823C104.713 69.0937 105.361 69.7576 106.153 69.7576H111.817C111.061 89.7234 95.3408 105.841 75.8407 106.603V100.8C75.8407 99.989 75.1926 99.3251 74.4006 99.3251C73.6086 99.3251 72.9606 99.989 72.9606 100.8V106.603C53.4605 105.841 37.7404 89.7356 36.9964 69.7576H42.6604C43.4524 69.7576 44.1004 69.0937 44.1004 68.2823C44.1004 67.4708 43.4524 66.8069 42.6604 66.8069H36.9964C37.7404 46.8289 53.4725 30.7235 72.9726 29.9612Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M57.8161 60.1681L70.3442 67.5815C70.2362 67.9749 70.1642 68.3806 70.1642 68.7986C70.1642 71.1837 72.0603 73.1262 74.3883 73.1262C76.7163 73.1262 78.6123 71.1837 78.6123 68.7986C78.6123 66.8684 77.3643 65.221 75.6603 64.6678V42.071C75.6603 41.2596 75.0123 40.5957 74.2203 40.5957C73.4283 40.5957 72.7803 41.2596 72.7803 42.071V64.803C72.5163 64.9136 72.2763 65.0489 72.0482 65.2087L72.0362 65.1964L59.2562 57.6232C58.5722 57.2175 57.6961 57.4634 57.3001 58.1641C56.8921 58.8649 57.1321 59.7624 57.8161 60.1681ZM74.4003 70.1879C73.6563 70.1879 73.0443 69.5609 73.0443 68.7986C73.0443 68.0364 73.6563 67.4094 74.4003 67.4094C75.1443 67.4094 75.7563 68.0364 75.7563 68.7986C75.7563 69.5731 75.1443 70.1879 74.4003 70.1879Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M33.2528 50.3569H12.2047C11.4127 50.3569 10.7646 51.0208 10.7646 51.8322C10.7646 52.6437 11.4127 53.3075 12.2047 53.3075H33.2528C34.0448 53.3075 34.6928 52.6437 34.6928 51.8322C34.6928 51.0208 34.0448 50.3569 33.2528 50.3569Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M27.2867 82.6537H32.0627C32.8547 82.6537 33.5027 81.9899 33.5027 81.1784C33.5027 80.367 32.8547 79.7031 32.0627 79.7031H27.2867C26.4947 79.7031 25.8467 80.367 25.8467 81.1784C25.8467 81.9899 26.4947 82.6537 27.2867 82.6537Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M21.539 89.4897H16.1509C15.3589 89.4897 14.7109 90.1536 14.7109 90.9651C14.7109 91.7765 15.3589 92.4404 16.1509 92.4404H21.539C22.331 92.4404 22.979 91.7765 22.979 90.9651C22.979 90.1536 22.331 89.4897 21.539 89.4897Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M30.7191 63.0815C31.5111 63.0815 32.1591 62.4176 32.1591 61.6062C32.1591 60.7947 31.5111 60.1309 30.7191 60.1309H22.9791C22.1871 60.1309 21.5391 60.7947 21.5391 61.6062C21.5391 62.4176 22.1871 63.0815 22.9791 63.0815H30.7191Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M3.94782 72.9418H9.33586C10.1279 72.9418 10.7759 72.2779 10.7759 71.4665C10.7759 70.6551 10.1279 69.9912 9.33586 69.9912H3.94782C3.15582 69.9912 2.50781 70.6551 2.50781 71.4665C2.50781 72.2779 3.15582 72.9418 3.94782 72.9418Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M19.7521 61.5324C19.7521 60.721 19.1041 60.0571 18.3121 60.0571H1.44001C0.648005 60.0571 0 60.721 0 61.5324C0 62.3438 0.648005 63.0077 1.44001 63.0077H18.3121C19.1041 63.0077 19.7521 62.3438 19.7521 61.5324Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M7.89606 43.5092H24.7682C25.5602 43.5092 26.2082 42.8453 26.2082 42.0339C26.2082 41.2225 25.5602 40.5586 24.7682 40.5586H7.89606C7.10406 40.5586 6.45605 41.2225 6.45605 42.0339C6.46805 42.8576 7.10406 43.5092 7.89606 43.5092Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M12.2051 71.3928C12.2051 72.2042 12.8531 72.8681 13.6451 72.8681H30.3492C31.1412 72.8681 31.7892 72.2042 31.7892 71.3928C31.7892 70.5814 31.1412 69.9175 30.3492 69.9175H13.6451C12.8531 69.9175 12.2051 70.5814 12.2051 71.3928Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M22.6213 79.9243H4.30915C3.51714 79.9243 2.86914 80.5882 2.86914 81.3996C2.86914 82.211 3.51714 82.8749 4.30915 82.8749H22.6213C23.4133 82.8749 24.0613 82.211 24.0613 81.3996C24.0613 80.5882 23.4133 79.9243 22.6213 79.9243Z" fill="black" fill-opacity="0.6"/>
+                 </svg>
+                 <div class="circle-text">
+                     Express Delivery:<br>Within 2 days
+                 </div>
+             </div>
+             <div class="circle-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98" fill="none">
+                     <path d="M94.5 0H3.5C1.568 0 0 1.5645 0 3.5V94.5C0 96.4355 1.568 98 3.5 98H94.5C96.432 98 98 96.4355 98 94.5V3.5C98 1.5645 96.432 0 94.5 0ZM91 7V40.551L79.4745 29.0255C78.106 27.657 75.894 27.657 74.5255 29.0255L57.75 45.801L37.4745 25.5255C36.106 24.157 33.894 24.157 32.5255 25.5255L7 51.051V7H91ZM21 91H7V70H21H35V91H21ZM42 91V66.5C42 64.5645 40.432 63 38.5 63H7V60.949L35 32.949L64.0255 61.9745C64.708 62.657 65.604 63 66.5 63C67.396 63 68.292 62.657 68.9745 61.9745C70.343 60.606 70.343 58.394 68.9745 57.0255L62.699 50.75L77 36.449L91 50.449V91H42Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M48.998 20.9995H51.049L53.5235 23.474C54.206 24.1565 55.102 24.4995 55.998 24.4995C56.894 24.4995 57.7901 24.1565 58.4726 23.474L60.947 20.9995H62.998C64.93 20.9995 66.498 19.435 66.498 17.4995C66.498 15.564 64.93 13.9995 62.998 13.9995H59.498C58.5705 13.9995 57.678 14.367 57.0235 15.025L55.998 16.0505L54.9726 15.025C54.3181 14.367 53.4255 13.9995 52.498 13.9995H48.998C47.066 13.9995 45.498 15.564 45.498 17.4995C45.498 19.435 47.066 20.9995 48.998 20.9995Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M31.5 80.5C31.5 74.711 26.789 70 21 70C15.211 70 10.5 74.711 10.5 80.5C10.5 86.289 15.211 91 21 91C26.789 91 31.5 86.289 31.5 80.5ZM21 84C19.0715 84 17.5 82.432 17.5 80.5C17.5 78.568 19.0715 77 21 77C22.9285 77 24.5 78.568 24.5 80.5C24.5 82.432 22.9285 84 21 84Z" fill="black" fill-opacity="0.6"/>
+                 </svg>
+                 <div class="circle-text">
+                     Watermark-free<br>Videos
+                 </div>
+             </div>
+             <div class="circle-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="96" height="98" viewBox="0 0 96 96" fill="none">
+                     <path d="M94.9389 0.480638C94.615 0.245934 94.24 0.0914886 93.8447 0.0300144C93.4494 -0.0314597 93.0452 0.00179475 92.6653 0.12704L38.9558 18.0342C36.4415 18.8714 34.2543 20.478 32.7038 22.6265C31.1532 24.775 30.3178 27.3567 30.3158 30.006V65.9467C27.4463 63.0188 23.6484 61.1787 19.5718 60.7412C15.4952 60.3037 11.3931 61.2959 7.96746 63.5482C4.54178 65.8004 2.00534 69.1728 0.79204 73.0882C-0.421255 77.0037 -0.236 81.219 1.31611 85.013C2.86823 88.807 5.69074 91.9439 9.30081 93.8871C12.9109 95.8303 17.0841 96.459 21.1067 95.6657C25.1292 94.8724 28.7511 92.7064 31.3526 89.5382C33.9541 86.3699 35.3737 82.3964 35.3684 78.2974V30.006C35.35 28.4015 35.8416 26.8327 36.7724 25.5254C37.7031 24.2182 39.0249 23.2401 40.5474 22.732L90.9474 6.03717V55.8439C88.0779 52.916 84.28 51.0759 80.2034 50.6384C76.1267 50.2009 72.0247 51.1931 68.599 53.4454C65.1734 55.6976 62.6369 59.07 61.4236 62.9854C60.2103 66.9009 60.3956 71.1162 61.9477 74.9102C63.4998 78.7042 66.3223 81.8411 69.9324 83.7843C73.5424 85.7275 77.7157 86.3562 81.7383 85.5629C85.7608 84.7696 89.3826 82.6036 91.9842 79.4354C94.5857 76.2672 96.0052 72.2936 96 68.1946V2.52645C95.9981 2.12575 95.9009 1.73124 95.7164 1.37551C95.5319 1.01978 95.2654 0.713043 94.9389 0.480638ZM17.6842 90.9259C15.1859 90.9259 12.7437 90.1852 10.6665 88.7976C8.58922 87.41 6.9702 85.4377 6.01414 83.1301C5.05809 80.8225 4.80794 78.2834 5.29533 75.8337C5.78272 73.384 6.98577 71.1338 8.75232 69.3677C10.5189 67.6016 12.7696 66.3988 15.2199 65.9116C17.6702 65.4243 20.21 65.6744 22.5181 66.6302C24.8262 67.586 26.799 69.2046 28.187 71.2814C29.5749 73.3581 30.3158 75.7997 30.3158 78.2974C30.3158 79.9558 29.9891 81.5979 29.3543 83.1301C28.7195 84.6623 27.789 86.0544 26.6161 87.2271C25.4431 88.3997 24.0506 89.3299 22.5181 89.9646C20.9856 90.5992 19.343 90.9259 17.6842 90.9259ZM78.3158 80.8231C75.8175 80.8231 73.3753 80.0824 71.298 78.6948C69.2208 77.3072 67.6018 75.3349 66.6457 73.0273C65.6897 70.7198 65.4395 68.1806 65.9269 65.7309C66.4143 63.2812 67.6173 61.031 69.3839 59.2649C71.1505 57.4988 73.4012 56.296 75.8515 55.8088C78.3018 55.3215 80.8416 55.5716 83.1497 56.5274C85.4578 57.4832 87.4306 59.1018 88.8186 61.1786C90.2065 63.2553 90.9474 65.6969 90.9474 68.1946C90.9474 69.853 90.6206 71.4952 89.9858 73.0273C89.351 74.5595 88.4206 75.9516 87.2477 77.1243C86.0747 78.297 84.6822 79.2272 83.1497 79.8618C81.6171 80.4964 79.9746 80.8231 78.3158 80.8231Z" fill="black" fill-opacity="0.6"/>
+                 </svg>
+                 <div class="circle-text">
+                     Customizable<br>Songs
+                 </div>
+             </div>
+             <div class="circle-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 106 104" fill="none">
+                     <path d="M43.4657 18.6957C42.4127 17.9532 41.0334 17.8677 39.8881 18.4617C38.7451 19.0557 38.0273 20.237 38.0273 21.5262V53.783C38.0273 55.0723 38.7451 56.2536 39.8881 56.8476C40.3899 57.1108 40.9367 57.2391 41.4834 57.2391C42.1787 57.2391 42.874 57.0276 43.4657 56.6136L66.5063 40.4852C67.4288 39.8394 67.98 38.7819 67.98 37.6546C67.98 36.5273 67.4288 35.4698 66.5063 34.824L43.4657 18.6957ZM44.9395 47.1453V28.1639L58.4983 37.6546L44.9395 47.1453Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M3.46585 75.883H102.54C104.448 75.883 105.996 74.335 105.996 72.427V3.45608C105.996 1.54804 104.448 0 102.54 0H3.46585C1.5578 0 0.00976562 1.54804 0.00976562 3.45608V72.427C0.00976562 74.335 1.5578 75.883 3.46585 75.883ZM6.92193 6.91216H99.0841V68.9709H6.92193V6.91216Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M102.544 89.7591H28.8074V86.2827C28.8074 84.3747 27.2594 82.8267 25.3513 82.8267C23.4433 82.8267 21.8953 84.3747 21.8953 86.2827V89.7591H3.45608C1.54804 89.7591 0 91.3071 0 93.2152C0 95.1232 1.54804 96.6712 3.45608 96.6712H21.8953V100.145C21.8953 102.053 23.4433 103.601 25.3513 103.601C27.2594 103.601 28.8074 102.053 28.8074 100.145V96.6712H102.544C104.452 96.6712 106 95.1232 106 93.2152C106 91.3071 104.452 89.7591 102.544 89.7591Z" fill="black" fill-opacity="0.6"/>
+                 </svg>
+                 <div class="circle-text">
+                     High-Quality<br>Video Delivery
+                 </div>
+             </div>
+             <div class="circle-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 116 124" fill="none">
+                     <path d="M114.301 92.2003L98.0195 78.4523C98.5475 77.4683 98.8815 76.3803 98.9775 75.2323C99.1635 73.0203 98.4794 70.8703 97.0535 69.1863C96.0094 67.9443 94.6515 67.0563 93.1274 66.5983C95.3895 63.5743 95.3634 59.2763 92.8314 56.2683C91.7314 54.9623 90.2834 54.0483 88.6594 53.6143C90.4695 50.6503 90.2854 46.7323 87.9234 43.9263C86.6154 42.3783 84.8154 41.3803 82.8154 41.0843C83.7314 38.4123 83.2674 35.3363 81.3194 33.0263C79.8974 31.3363 77.8914 30.3043 75.6774 30.1163C73.4514 29.9223 71.3114 30.6103 69.6214 32.0343L69.3134 32.2943L59.9814 27.9403C55.0974 25.4043 50.8214 27.3983 48.7534 30.4923C48.0654 31.5203 47.6434 32.6303 47.4234 33.7503L45.3894 32.0323C41.8874 29.0843 36.6414 29.5343 33.6914 33.0263C31.7434 35.3363 31.2794 38.4123 32.1974 41.0843C30.1974 41.3803 28.4014 42.3763 27.0894 43.9283C25.6654 45.6183 24.9834 47.7663 25.1694 49.9783C25.2814 51.2903 25.6874 52.5263 26.3514 53.6143C24.7774 54.0383 23.3094 54.9283 22.1794 56.2663C19.6454 59.2743 19.6214 63.5723 21.8854 66.5963C20.4034 67.0463 19.0294 67.9103 17.9594 69.1803C15.7054 71.8483 15.4454 75.5363 17.0014 78.4503L0.71144 92.1983C-0.13456 92.9103 -0.24056 94.1723 0.471441 95.0163C0.867441 95.4843 1.43144 95.7263 2.00344 95.7263C2.45944 95.7263 2.91544 95.5723 3.29144 95.2563L19.6374 81.4623L26.1934 86.9903C27.6994 88.2603 29.5694 88.9403 31.5234 88.9403C31.7614 88.9403 32.0014 88.9283 32.2414 88.9083C34.4514 88.7203 36.4554 87.6883 37.8734 86.0023C39.3014 84.3163 39.9854 82.1703 39.7994 79.9563C39.7014 78.7843 39.3534 77.6823 38.8114 76.6823C40.4634 76.2823 42.0134 75.3923 43.1894 73.9983C44.8094 72.0763 45.3674 69.6323 44.9934 67.3263C44.9954 67.3263 44.9974 67.3263 44.9994 67.3263C47.3314 67.3263 49.6294 66.3583 51.2034 64.5003C52.6734 63.0223 53.4334 61.0103 53.3394 58.8383C53.3354 58.7663 53.3114 58.6983 53.3074 58.6283C53.6354 58.6683 53.9594 58.7223 54.2934 58.7223C54.5314 58.7223 54.7734 58.7123 55.0134 58.6903C57.2274 58.5023 59.2294 57.4683 60.5334 55.9083C62.0114 54.4383 62.7754 52.4323 62.6854 50.2583C62.6034 48.2823 61.8034 46.4243 60.5034 44.9643L72.1974 35.0903C73.0714 34.3563 74.1795 33.9943 75.3354 34.1023C76.4855 34.1983 77.5234 34.7323 78.2574 35.6043C79.7834 37.4143 79.5515 40.1363 77.7414 41.6643L76.2294 42.9443C76.2274 42.9463 76.2274 42.9463 76.2274 42.9463C75.3855 43.6583 75.2794 44.9203 75.9954 45.7643C76.7054 46.6063 77.9674 46.7103 78.8114 45.9983L78.8214 45.9883C79.6895 45.2623 80.8035 44.9183 81.9354 45.0063C83.0874 45.1023 84.1294 45.6343 84.8634 46.5063C86.3914 48.3203 86.1594 51.0383 84.3474 52.5663L81.1395 55.2803C81.1395 55.2803 81.1374 55.2823 81.1354 55.2823C80.2934 55.9963 80.1874 57.2583 80.9014 58.1003C81.6134 58.9443 82.8755 59.0503 83.7194 58.3363C84.5914 57.5963 85.7355 57.2543 86.8514 57.3423C87.9995 57.4403 89.0355 57.9723 89.7694 58.8443C91.2954 60.6563 91.0635 63.3763 89.2554 64.9043L85.3634 68.1883L85.3614 68.1903C84.5174 68.9023 84.4094 70.1643 85.1214 71.0083C85.8335 71.8523 87.0934 71.9623 87.9394 71.2483L87.9454 71.2443C88.8175 70.5103 89.9174 70.1683 91.0734 70.2563C92.2215 70.3543 93.2574 70.8863 93.9934 71.7623C94.7315 72.6363 95.0835 73.7483 94.9874 74.8943C94.8895 76.0423 94.3574 77.0823 93.4854 77.8183L75.3074 93.1623C67.8895 99.4243 61.7714 98.7623 52.5814 96.9343C51.9814 96.8083 51.3674 96.9743 50.8994 97.3683L23.5294 120.472C22.6854 121.182 22.5794 122.444 23.2934 123.29C23.6874 123.758 24.2514 124 24.8214 124C25.2774 124 25.7334 123.846 26.1114 123.528L52.7474 101.042C56.5434 101.774 60.0174 102.284 63.3734 102.16L88.9174 123.534C89.2955 123.848 89.7495 124 90.2014 124C90.7735 124 91.3415 123.756 91.7374 123.284C92.4454 122.436 92.3354 121.176 91.4874 120.468L68.6554 101.362C71.6854 100.504 74.7094 98.9043 77.8874 96.2223L95.3834 81.4583L111.721 95.2543C112.097 95.5723 112.555 95.7263 113.011 95.7263C113.581 95.7263 114.145 95.4863 114.541 95.0183C115.251 94.1743 115.145 92.9123 114.301 92.2003ZM52.2894 37.8543C50.7754 36.5763 51.0514 34.2523 52.0814 32.7143C52.5894 31.9543 54.5294 29.6203 58.2174 31.5263L65.9494 35.1343L57.5074 42.2623L52.3074 37.8743L52.2934 37.8623C52.2914 37.8603 52.2934 37.8563 52.2894 37.8543ZM34.8214 83.4183C34.0874 84.2923 33.0514 84.8243 31.9054 84.9203C30.7474 85.0243 29.6434 84.6643 28.7734 83.9303L21.5274 77.8223C19.7174 76.2863 19.4874 73.5683 21.0174 71.7603C22.5334 69.9603 25.2194 69.7223 27.0334 71.2223L34.3174 77.3643C35.1894 78.0983 35.7214 79.1363 35.8174 80.2863C35.9134 81.4363 35.5594 82.5463 34.8214 83.4183ZM40.1354 71.4163C38.6074 73.2263 35.8914 73.4583 34.0794 71.9343L29.6614 68.2083C29.6554 68.2043 29.6534 68.1963 29.6474 68.1903L29.6454 68.1883L25.7554 64.9063C23.9454 63.3743 23.7134 60.6563 25.2374 58.8463C25.9754 57.9723 27.0154 57.4403 28.1634 57.3423C29.3134 57.2483 30.4254 57.5983 31.2974 58.3363L31.2994 58.3383C31.3034 58.3423 31.3114 58.3423 31.3154 58.3463L39.6174 65.3603C41.4294 66.8883 41.6594 69.6083 40.1354 71.4163ZM48.2634 61.7923C46.7314 63.6023 44.0154 63.8343 42.2014 62.3043L33.8534 55.2543C33.8514 55.2523 33.8474 55.2523 33.8454 55.2503L30.6594 52.5623C29.7874 51.8283 29.2554 50.7903 29.1574 49.6403C29.0594 48.4923 29.4134 47.3763 30.1474 46.5063C30.8834 45.6343 31.9214 45.1023 33.0694 45.0063C34.1974 44.9003 35.3194 45.2563 36.1894 45.9823L36.2074 45.9983L47.7454 55.7343C48.6974 56.5383 49.2954 57.7623 49.3494 59.0063C49.3914 60.0503 49.0474 60.9983 48.2634 61.7923ZM57.5994 53.2003C56.8654 54.0723 55.8294 54.6043 54.6814 54.7023C53.5274 54.8083 52.4214 54.4483 51.5534 53.7163C51.4554 53.6343 51.3674 53.6323 51.2854 53.6783C50.9854 53.3283 50.6794 52.9783 50.3254 52.6783L38.7854 42.9403C38.7774 42.9323 38.7694 42.9283 38.7614 42.9203L37.2674 41.6623C35.4574 40.1323 35.2254 37.4123 36.7494 35.6043C38.2794 33.7963 40.9994 33.5623 42.8094 35.0863L45.5434 37.3963C45.5454 37.3963 45.5454 37.3983 45.5474 37.4003L49.8914 41.0683L51.2354 42.2023L57.0934 47.1483C58.0454 47.9503 58.6414 49.1743 58.6954 50.4223C58.7374 51.4603 58.3895 52.4003 57.5994 53.2003Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M65.5156 14.52C66.6216 14.52 67.5156 13.626 67.5156 12.52V2C67.5156 0.894 66.6216 0 65.5156 0C64.4096 0 63.5156 0.894 63.5156 2V12.52C63.5156 13.626 64.4096 14.52 65.5156 14.52Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M92.0103 20.2701C92.6263 20.2701 93.2323 19.9861 93.6263 19.4541L99.8483 10.9741C100.5 10.0841 100.308 8.83206 99.4183 8.17806C98.5223 7.52206 97.2743 7.72006 96.6223 8.60806L90.4003 17.0881C89.7483 17.9781 89.9403 19.2301 90.8303 19.8841C91.1863 20.1441 91.6003 20.2701 92.0103 20.2701Z" fill="black" fill-opacity="0.6"/>
+                     <path d="M37.4052 19.4541C37.7952 19.9881 38.4032 20.2701 39.0192 20.2701C39.4292 20.2701 39.8432 20.1441 40.2012 19.8821C41.0912 19.2301 41.2832 17.9781 40.6292 17.0881L34.4032 8.6081C33.7512 7.7201 32.5012 7.5261 31.6092 8.1801C30.7192 8.8321 30.5272 10.0841 31.1812 10.9741L37.4052 19.4541Z" fill="black" fill-opacity="0.6"/>
+                 </svg>
+                 <div class="circle-text">Priority Support</div>
+             </div>
+         </div>
+     </div>
+     <div class="video-invitaion-products">
+         <h2 class="invite-types-title diff-invite">
+             Our Most <span style="color: #007663;">Trending Invites</span>
+         </h2>
+
+         <div id="videos" class="main-video-container"></div>
+         <div class="show-more-button">
+            <div class="videos-box">
+                <span>
+                    <img src="./assets/img/productpage/product_1100.webp" alt="images1" />
+                </span>
+                <span>
+                    <img src="./assets/img/productpage/product_1101.webp" alt="" />
+                </span>
+                <span>
+                    <img src="./assets/img/productpage/product_1102.webp" alt="" />
+                </span>
+                <span>
+                    <img src="./assets/img/productpage/product_1103.webp" alt="" />
+                </span>
+                <span>
+                    <img src="./assets/img/productpage/product_1104.webp" alt="" />
+                </span>
+                <span>
+                    <img src="./assets/img/productpage/product_1105.webp" alt="" />
+                </span>
+             
+            </div>
+            <button class="show-more">
+                <p>Show more</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+         </div>
+     </div>
+     <div class="customise-video-container-title">
+         Customize Your video invite  <br>
+         <span style="color: #007663;">-With Celebrare</span>
+     </div>
+     <div class="customise-video-container-subtitle">with 2 simple ways.</div>
+     <div class="invite-categories">
+         <div>
+             <div class="category-content">
+                <div class="lottie-animation" >
+                    <img class ="animation-images" src="https://camo.githubusercontent.com/b7e84cd7df9d883ebab3618b73506c04d2b867b5249291268930f0ab1f02e2e2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f70726163746963616c6465762f696d6167652f66657463682f732d2d32625a496a5047432d2d2f635f6c696d6974253243665f6175746f253243666c5f70726f6772657373697665253243715f3636253243775f3838302f68747470733a2f2f6465762d746f2d75706c6f6164732e73332e616d617a6f6e6177732e636f6d2f692f64347476756b6274356d726133376376776b6c6b2e676966"/>
+                 </div>
+                 <br>
+                 <h3 class="pdf-type-title">
+                     Want to Create your<br>
+                     Invite <span style="color: #007663;">Online</span>
+                     ?
+                 </h3>
+                 <ul>
+                     <li class="pdf-li-0"></li>
+                     <li class="pdf-li-1">Select the template</li>
+                     <li class="pdf-li-2">Fill the basic details</li>
+                     <li class="pdf-li-3">Download it and Share it</li>
+                 </ul>
+                 <a class="create-invitation-btn-1" onclick="openModal()">
+                     <span class="lets-create-btn" style="color: white;">Let's Create It Online</span>
+                 </a>
+             </div>
+         </div>
+         <div>
+             <span class="or-divider" style="margin: auto;font-size: larger;">OR</span>
+         </div>
+         <div>
+             <div class="category-content">
+                 <div class="lottie-animation" >
+                    <img class ="animation-images" src="https://camo.githubusercontent.com/cd6a67255f133067f34f639435bd3be835a463d6e89f4f1e5651a1f98d5f32c3/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3732302f312a7164415731546a434e353768316c6275757a766368672e676966"/>
+                 </div>
+                 <h3 class="video-type-invite">
+                     Want Our help to create <br>your invite?
+                 </h3>
+                 <ul>
+                     <li class="video-li-0"></li>
+                     <li class="video-li-1">Contact our Team on WhatsApp</li>
+                     <li class="video-li-2">Share us your details</li>
+                     <li class="video-li-3">Download it and share it.</li>
+                 </ul>
+                 <a class="create-invitation-btn-1" onclick='window.open("http:/wa.me/918005993442?text=Hey! Need help","_blank")'>
+                     <span class="lets-create-btn" style="color: white;">Order On Whatsapp</span>
+                 </a>
+             </div>
+         </div>
+     </div>
+     <div class="content-container">
+         <div class="content-containe title">
+             <img src="/assets/img/logo.webp" style="width: 20%; display: inline; vertical-align: middle;">
+             <span style="font-family:'Times New Roman', Times, serif">VIDEO INVITATIONS </span>
+             <br>
+             <div class="gradient-text">Fast, Easy and Affordable!</div>
+         </div>
+         <div class="content">
+             <p class="video-content-1">Invitation is the first impression of your amazing event. Its not just an invitation, but a way to express your
+         Believes, Cultures, Story, Religion.</p>
+             <p class="video-content-2">Design your own wedding invitation cards for any occasion with Celebrare, India's easiest do-it-yourself
+         wedding invitation designer. Choose from a wide range of card templates and add your own text,
+         images and stickers to make it uniquely yours. Download the PDF version. Creating wedding is
+         very important process  but it is not always easy and fun to do it yourself.</p>
+             <p class="video-content-3">Celebrare makes it easier and more enjoyable than ever before!</p>
+             <p class="video-content-4"></p>
+         </div>
+     </div>
+     <new-footer></new-footer>
+</body>
+</html>
+
+
